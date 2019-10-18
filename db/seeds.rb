@@ -44,6 +44,13 @@ cat1.products.create!({
 })
 
 cat1.products.create!({
+  name:  'Men\'s Classy shirt',
+  description: Faker::Hipster.paragraph(4),
+  image: open_asset('apparel1.jpg'),
+  quantity: 0,
+  price: 1100.24
+})
+cat1.products.create!({
   name:  'Women\'s Zebra pants',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('apparel2.jpg'),
